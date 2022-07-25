@@ -1,0 +1,5 @@
+**/*.css linguist-documentation=false
+**/*.html linguist-documentation=false
+
+**/*.css linguist-language=Ruby
+**/*.html linguist-language=Ruby
