@@ -1,13 +1,9 @@
 # 🕸️ Scraper
 
-### Run with Docker
+### Run with docker-compose
 
 ```bash
-docker image build -t scraper-rb .
-```
-
-```bash
-docker container run -it scraper-rb
+docker-compose up
 ```
 
 ### Run without Docker

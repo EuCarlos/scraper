@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    image: nginx:1.13
+    volumes:
+      - ./news:/usr/share/nginx/html
+    ports:
+      - 80:80
+  app:
+    image: ruby:2.7-alpine
+    volumes:
+      - ./app:/app
+    command: bash -c "cd /app && bundle install && ruby app.rb"

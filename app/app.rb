@@ -2,7 +2,7 @@ require 'nokogiri'
 require 'httparty'
 
 def main
-    response = 'http://localhost:5500/news/'
+    response = 'http://web/'
     unparsed_page = HTTParty.get(response)
     parsed_page = Nokogiri::HTML(unparsed_page.body)
 
